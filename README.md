@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ne">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hari Om Shivdhari English Boarding School, Parikauli</title>
+  <style>
+    :root{--accent:#0b6cf5;--muted:#555;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans',sans-serif}
+    body{margin:0;color:#222;line-height:1.5;background:#fafbff}
+    header{background:#f7f9ff;border-bottom:1px solid #eee;padding:18px}
+    .container{max-width:1000px;margin:0 auto;padding:0 16px}
+    .top{display:flex;align-items:center;gap:14px}
+    .logo{width:80px;height:80px;flex:0 0 80px;border-radius:50%;overflow:hidden}
+    .logo img{width:100%;height:100%;object-fit:cover}
+    nav{margin-left:auto}
+    nav a{margin-left:12px;text-decoration:none;color:var(--muted)}
+    .hero{position:relative;overflow:hidden;height:420px;border-radius:12px;margin-top:18px}
+    .slide{position:absolute;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1s ease-in-out}
+    .slide.active{opacity:1}
+    .caption{position:absolute;bottom:20px;left:20px;background:rgba(0,0,0,0.5);color:white;padding:10px 16px;border-radius:8px;font-size:18px;line-height:1.3}
+    .caption small{display:block;font-size:13px;color:#d0d0d0}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px}
+    .card{background:white;padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(12,20,40,0.06)}
+    h1{margin:0 0 6px;font-size:22px}
+    h2{margin:8px 0 12px;font-size:18px}
+    ul{padding-left:18px}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:6px}
+    form label{display:block;margin:8px 0 6px;font-weight:600}
+    input,select,textarea{width:100%;padding:8px;border-radius:6px;border:1px solid #ddd}
+    .actions{display:flex;gap:8px;margin-top:12px}
+    button{background:var(--accent);color:white;padding:8px 12px;border-radius:8px;border:0;cursor:pointer}
+    .muted{color:var(--muted);font-size:13px}
+    footer{text-align:center;padding:18px;color:var(--muted);font-size:14px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container top">
+      <div class="logo"><img src="Hari Om Shivdhari School Logo.png" alt="School Logo"></div>
+      <div>
+        <div style="font-weight:700;font-size:20px">Hari Om Shivdhari English Boarding School</div>
+        <div class="muted">Parikauli Chowk, Ward No. 9 • Nursery — Grade 7</div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#admission">Admission</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="heroSlider">
+      <img src="IMG_6358.PNG" class="slide active" alt="School Building">
+      <img src="IMG_6363.PNG" class="slide" alt="Students">
+      <div class="caption" id="caption">
+        Welcome to Hari Om Shivdhari English Boarding School
+        <small>हाम्रो विद्यालयमा स्वागत छ</small>
+      </div>
+    </section>
+
+    <div class="card" style="margin-top:14px">
+      <h1>Hari Om Shivdhari English Boarding School</h1>
+      <div class="muted">Principal: <strong>Triloki Yadav</strong></div>
+      <div class="muted">Phone: <a href="tel:+9779815886775">9815886775</a> • <a href="https://wa.me/9779815886775">WhatsApp</a></div>
+      <div class="muted">Facebook: <a href="https://www.facebook.com/share/1BUBbjY7KG/?mibextid=wwXIfr" target="_blank">Visit Page</a></div>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <h2>📸 School Gallery / तस्वीरहरू</h2>
+      <div class="gallery">
+        <img src="IMG_5256.JPG">
+        <img src="IMG_5260.JPG">
+        <img src="IMG_5261.JPG">
+        <img src="IMG_5262.JPG">
+        <img src="IMG_5263.JPG">
+        <img src="IMG_5265.JPG">
+        <img src="IMG_5267.JPG">
+        <img src="IMG_5268.JPG">
+        <img src="IMG_5272.JPG">
+        <img src="IMG_5273.JPG">
+        <img src="IMG_5274.JPG">
+        <img src="IMG_6366 (1).PNG">
+      </div>
+    </div>
+
+    <div class="grid">
+      <section>
+        <div class="card" id="admission">
+          <h2>Admission Form / भर्ना फारम</h2>
+          <form id="admissionForm">
+            <label>Student full name / विद्यार्थीको नाम</label><input name="studentName" required>
+            <label>Parent / Guardian name / अभिभावकको नाम</label><input name="parentName" required>
+            <label>Phone / फोन</label><input name="phone" type="tel" required>
+            <label>WhatsApp number</label><input name="whatsapp" type="tel">
+            <label>Date of birth / जन्म मिति</label><input name="dob" type="date">
+            <label>Applying for class / कुन कक्षा</label>
+            <select name="applyClass">
+              <option>Nursery</option><option>LKG</option><option>UKG</option>
+              <option>1</option><option>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6</option><option>7</option>
+            </select>
+            <label>Address / ठेगाना</label><textarea name="address" rows="3"></textarea>
+            <div class="actions"><button type="submit">Submit / पठाउनुहोस्</button></div>
+          </form>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card" id="contact">
+          <h2>Contact / सम्पर्क</h2>
+          <div class="muted">Principal / प्रिन्सिपल</div>
+          <div style="font-weight:700">Triloki Yadav</div>
+          <div style="margin-top:8px">
+            <div>Phone: <a href="tel:+9779815886775">9815886775</a></div>
+            <div>WhatsApp: <a href="https://wa.me/9779815886775">Chat on WhatsApp</a></div>
+            <div style="margin-top:6px">Facebook: <a href="https://www.facebook.com/share/1BUBbjY7KG/?mibextid=wwXIfr" target="_blank">Visit Page</a></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="card" id="about" style="margin-top:18px">
+      <h2>About Our School / हाम्रो विद्यालय</h2>
+      <p>📖 Hariom Shivdhari English Boarding School<br>
+      📍 Parikauli Chowk, Jaleshwor Municipality-Ward No. 9<br>
+      👶 Nursery to Class 7<br>
+      👨‍🏫 Principal: Triloki Yadav<br>
+      📞 Contact: 981-5886775</p>
+      <p>🌟 That's where the bright future of children begins! Hari Om Shivdhari English Boarding School is a reliable educational institution located in Parikauli, providing quality education to students from Nursery to Class 7.</p>
+      <ul>
+        <li>📘 English</li><li>➕ Mathematics</li><li>🌍 Social Studies</li><li>🧠 General Knowledge (GK)</li>
+        <li>🧪 Science</li><li>💻 Computer Education</li><li>🗣️ Nepali</li>
+        <li>🎨 Creative Activities</li><li>💡 Education at an affordable fee</li><li>🏆 Personality development</li>
+      </ul>
+      <p>📢 Admission open – enroll today! Call 981-5886775 or visit the school.</p>
+      <p style="text-align:center;margin-top:12px">———————— Thank You ————————</p>
+    </div>
+  </main>
+
+  <footer>© <span id="year"></span> Hari Om Shivdhari English Boarding School. All rights reserved.</footer>
+
+  <script>
+    const slides=document.querySelectorAll('.slide');
+    const caption=document.getElementById('caption');
+    const captions=[
+      {en:'Welcome to Hari Om Shivdhari English Boarding School',np:'हाम्रो विद्यालयमा स्वागत छ'},
+      {en:'Our Students – The Pride of Our School',np:'हाम्रो विद्यार्थीहरू – हाम्रो गौरव'}
+    ];
+    let index=0;
+    setInterval(()=>{
+      slides[index].classList.remove('active');
+      index=(index+1)%slides.length;
+      slides[index].classList.add('active');
+      caption.innerHTML=`${captions[index].en}<small>${captions[index].np}</small>`;
+    },4000);
+    document.getElementById('year').textContent=new Date().getFullYear();
+
+    function sendToWhatsApp(event){
+      event.preventDefault();
+      const name=document.querySelector('[name="studentName"]').value;
+      const parent=document.querySelector('[name="parentName"]').value;
+      const phone=document.querySelector('[name="phone"]').value;
+      const whatsapp=document.querySelector('[name="whatsapp"]').value;
+      const applyClass=document.querySelector('[name="applyClass"]').value;
+      const address=document.querySelector('[name="address"]').value;
+      const message=`📚 *New Admission Request*%0A👧 विद्यार्थी: ${name}%0A👨‍👩‍👧 अभिभावक: ${parent}%0A📞 फोन: ${phone}%0A💬 WhatsApp: ${whatsapp}%0A🏫 कक्षा: ${applyClass}%0A📍 ठेगाना: ${address}`;
+      const whatsappNumber="9779815886775";
+      const url=`https://wa.me/${whatsappNumber}?text=${message}`;
+      window.open(url,'_blank');
+    }
+    document.getElementById('admissionForm').addEventListener('submit',sendToWhatsApp);
+  </script>
+</body>
+</html>
